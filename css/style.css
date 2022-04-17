@@ -1603,6 +1603,7 @@ body {
 }
 
 .partners-slider {
+   overflow:hidden;
   border-bottom-left-radius: 143px;
   border-top-left-radius: 143px;
   margin-left: 100px;
@@ -1619,7 +1620,9 @@ body {
 }
 
 .partners-slider .swiper-button-prev {
-  left: 90px;
+
+    left: calc(60px + 90 * ((100vw - 320px) / 1180));
+
 }
 
 .partners-slider .swiper-button-prev,
@@ -2135,9 +2138,7 @@ body {
     right: calc(0px + 70 * ((100vw - 320px) / 1180));
   }
 
-  .partners-slider .swiper-button-prev {
-    left: calc(0px + 90 * ((100vw - 320px) / 1180));
-  }
+
 
   .partners-slider .swiper-button-prev::after,
   .partners-slider .swiper-button-next::after {
